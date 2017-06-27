@@ -1,7 +1,7 @@
 # InspiroBot Slackbot
 
 First of all, I should say that I am not affiliated with the wonderful InspiroBot (http://inspirobot.me/).
-But it picks me up when I'm feeling down and I want it to help my whole team. So this slackbot posts inspirational posters to my team's #inspiration channel once an hour. 
+But it picks me up when I'm feeling down and I want it to help my whole team. So this slackbot posts inspirational posters to my team's #inspiration channel once an hour on weekdays between 9am and 5pm. 
 
 Prerequisites:
 - Python 2.7
@@ -9,6 +9,7 @@ Prerequisites:
 - time module
 - request module
 - os module
+- datetime
 
 Set up: 
 - Create a new slack bot integration (https://api.slack.com/custom-integrations/bot-users)
