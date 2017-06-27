@@ -2,7 +2,7 @@ from __future__ import print_function
 from slackclient import SlackClient
 import time
 import requests
-
+import datetime
 
 class Bot(object):
 
@@ -19,10 +19,9 @@ class Bot(object):
             except Exception as e:
                 pass
             while True:
-                try:
+                now = datetime.datetime.now()
+                if now.hour > 9 & now.hour < 17 & now.weekday() <= 4:
                     self.post_inspiration()
-                except:
-                    pass
                 time.sleep(3600)
         else:
             print("Connection failed.")
