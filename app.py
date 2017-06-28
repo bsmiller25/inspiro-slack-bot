@@ -21,7 +21,7 @@ class Bot(object):
                 pass
             while True:
                 now = datetime.datetime.now()
-                if all((now.hour > 9, now.hour < 17,  now.weekday() <= 4)):
+                if all((now.hour >= 9, now.hour <= 17,  now.weekday() <= 4)):
                     self.post_inspiration()
                 time.sleep(3600)
         else:
